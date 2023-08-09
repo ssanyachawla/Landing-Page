@@ -1,0 +1,398 @@
+/* Navigation Bar  */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+/* Navigation Bar: Logo and Image  */
+#logo {
+    margin: 7px 15px;
+}
+
+#logo img {
+    margin: 0px 450px 0px 23px;
+    height: 52px;
+    width: 101px;
+}
+
+a {
+    color: #7bb5e5;
+}
+
+i {
+    padding: 13px;
+
+}
+
+
+/* Navigatin Bar :List Styling */
+#navbar ul {
+    display: flex;
+    margin: 0px 1px;
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1 rem;
+
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+
+/* Home section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 375px;
+    margin-top: 38px;
+}
+
+#home::before {
+    content: "";
+    background: url('../bg3.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 480px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.85;
+}
+
+
+#home h1 {
+    top: 0px;
+    color: black;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#home p {
+    margin-left: 160px;
+    margin-right: 160px;
+    color: black;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Bree Serif', serif;
+
+}
+
+
+/* About section */
+#about {
+    top:0px;
+    bottom:0px;
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 430px;
+    /* background-color: rgb(206, 202, 202); */
+}
+
+
+
+#about h3 {
+    margin-top: 35px;
+    font-weight: 400;
+    font-size: 26px;
+    color: #364146;
+    font-family: "Poppins", sans-serif;
+}
+
+#about p {
+    color: black;
+    /* text-align:center; */
+    font-size: 1rem;
+    margin-bottom: 5px;
+    font-style: italic !important;
+    margin-top: 5px;
+
+}
+
+
+#about img {
+    margin-top: 20px;
+    margin-right: 20px;
+    /* margin-left:50px; */
+    height: 360px;
+    width: 380px;
+}
+
+#about ul{
+    padding-left: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding:15px;
+}
+
+
+/* Service section */
+
+
+#services-container{
+    position: relative;
+    height: 400px;
+}
+
+#services-container::before {
+    content:"";
+    position: absolute;
+    background: url('../bg-serv.avif') no-repeat center center/cover;
+    width:100%;
+    height: 450px;
+    z-index: -1;
+    opacity: 0.8; 
+}
+
+#serv{
+    text-align: center;
+    margin: 0px;
+    
+}
+
+#services-container h2{
+    font-size: 39px;
+    font-weight: 400;
+    margin-top: 30px;
+    padding-bottom: 0;
+    padding-top: 10;
+    font-family: "Poppins", sans-serif;
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+
+#services{
+    margin: 15px;
+    display: flex;
+}
+
+#services .box{
+    height:300px;
+    position: relative;
+    /* border-radius: 20px; */
+    /* border: 2px solid rgb(89, 88, 88); */
+    padding:20px;
+    margin:10px 7px;
+    background: #f2f2f2;
+    margin-bottom: 30px;
+    z-index: -1;
+    
+}
+#services h3{
+    font-weight: bold;
+    text-align: center;
+    font-family:'Bree Serif', serif;
+    font-size: 1.5rem;
+    margin: 8px 15px 8px 15px;
+    
+}
+#services .box p{
+    font-family:'Bree Serif', serif;
+    font-size: 1rem;
+    margin: 25px 15px 8px 15px;
+    
+}
+
+
+/* #services .box img{
+    height:135px;
+    padding: 15px;
+    margin:auto;
+    display:block;
+}    */
+
+/* Clients Section */
+#clients{
+    margin-top: 90px;
+    height:475px;
+    z-index: -1;
+}
+
+#clients h2{
+    text-align: center;
+    
+}
+#clients p{
+    margin: 20px 80px 20px 80pxx;
+    text-align: center;
+    
+}
+
+#clients div{
+    text-align: center;
+}
+
+#clients table{
+    position: relative;
+    margin-top: 50px;
+    margin-left:auto;
+    margin-right:auto;
+    z-index: -1;
+    display: block;
+    width: 90%;
+
+}
+
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+table tr{
+    height: 150px;
+}  
+
+table td{
+    width: 400px;
+}
+
+
+#cs{
+    /* -webkit-tap-highlight-color: transparent; */
+    height:60px;
+    width: 100px;
+    /* -webkit-filter: grayscale(100%); */
+    filter: grayscale(35%);
+    
+}  
+
+#cs:hover{
+    -webkit-tap-highlight-color: initial;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    size: 150%;
+} 
+
+
+/* Portfolio */
+
+#portfolio-container{
+    height: 1000px;
+}
+
+#port p{
+    margin-left: 10px;
+}
+#port{
+    margin-top:25px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#port2{
+    /* margin-right: 120px; */
+    margin-left: 150px;
+}
+
+
+#port2 img{
+    height: 250px;
+    padding:10px;
+}
+
+
+
+footer{
+    height: 280px;
+    background: rgba(225, 172, 180, 0.824);
+    color: whitesmoke;
+    padding: 9px 20px;
+    /* opacity: 0.7; */
+    
+}
+
+#flex-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* border-top: 1px solid #a0a0a0; */
+    /* padding-top: 20px; */
+    padding: 10px 0px 10px 40px;
+    
+}
+ 
+#flex-container a{
+    padding-right: 100px;
+    color: #364146;
+
+}
+
+hr{
+    margin-bottom: 5px;
+}
+
+
+/* Utility classes  */
+.h-primary {
+    font-size: 2rem;
+    padding: 10px;
+    font-family: 'Bree Serif', serif;
+}
+
+.h-secondary {
+    font-size: 1.4rem;
+    padding: 12px;
+
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 1px solid black;
+    background-color: transparent;
+    color: black;
+    margin: 17px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.btn:hover{
+    border: 1px solid white;
+    background-color: rgba(162, 100, 191, 0.4);
+    color: white;
+    /* padding: 7px; */
+}
+
+.center {
+    text-align: center;
+}
+
+
+
+
+
+
